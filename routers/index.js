@@ -13,6 +13,7 @@ import {
   updateArtist,
   deleteArtist,
 } from '../controllers/Artists.js';
+import { getArtworks } from '../controllers/Artworks.js';
 
 const router = express.Router();
 
@@ -28,4 +29,5 @@ router.post('/artists', addArtist);
 router.patch('/artists/:artistID', updateArtist);
 router.delete('/artists/:artistID', deleteArtist);
 
+router.get('/artworks', getArtworks);
 export default router;
