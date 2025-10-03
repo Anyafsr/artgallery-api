@@ -16,7 +16,7 @@ const Artworks = db.define('artworks', {
 });
 
 Artworks.associate = (models) => {
-  Artworks.hasMany(models.Locations, { foreignKey: 'id_artworks' });
+  Artworks.belongsTo(models.Locations, { foreignKey: 'id_locations' });
   Artworks.belongsTo(models.Artists, { foreignKey: 'id_artists' });
 };
 

@@ -22,8 +22,8 @@ const Locations = db.define('locations', {
 });
 
 Locations.associate = (models) => {
-  Locations.belongsTo(models.Artworks, { foreignKey: 'id_artworks' });
-  Locations.belongsTo(models.Tickets, { foreignKey: 'id_tickets' });
+  Locations.hasMany(models.Artworks, { foreignKey: 'id_locations' });
+  Locations.hasMany(models.Tickets, { foreignKey: 'id_locations' });
 };
 
 export default Locations;

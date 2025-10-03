@@ -12,6 +12,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
         id_artists: '1',
+        id_locations: '2',
       },
       {
         id: '2',
@@ -21,6 +22,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
         id_artists: '2',
+        id_locations: '3',
       },
       {
         id: '3',
@@ -30,6 +32,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
         id_artists: '3',
+        id_locations: '1',
       },
     ]);
   },

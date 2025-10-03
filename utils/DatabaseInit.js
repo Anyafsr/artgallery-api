@@ -9,10 +9,10 @@ import {
 export const initDatabase = async () => {
   try {
     await Visitors.sync();
+    await Locations.sync();
     await Tickets.sync();
     await Artists.sync();
     await Artworks.sync();
-    await Locations.sync();
     console.log('Database synchronized successfully.');
   } catch (error) {
     console.error('Error synchronizing database:', error);

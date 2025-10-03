@@ -17,6 +17,7 @@ const Tickets = db.define('tickets', {
 
 Tickets.associate = (models) => {
   Tickets.belongsTo(models.Visitors, { foreignKey: 'id_visitor' });
+  Tickets.belongsTo(models.Locations, { foreignKey: 'id_locations' });
 };
 
 export default Tickets;

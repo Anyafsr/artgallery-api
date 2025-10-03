@@ -9,6 +9,10 @@ export const getArtworks = async (req, res) => {
         model: Artists,
         attributes: ['artist_name'],
       },
+      include: {
+        model: Locations,
+        attributes: ['location_name'],
+      },
     });
     res.json(artworks);
   } catch (error) {
