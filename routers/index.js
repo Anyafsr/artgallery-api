@@ -20,6 +20,13 @@ import {
   updateArtwork,
   deleteArtwork,
 } from '../controllers/Artworks.js';
+import {
+  getLocations,
+  getLocationsById,
+  addLocation,
+  updateLocation,
+  deleteLocation,
+} from '../controllers/Locations.js';
 
 const router = express.Router();
 
@@ -40,5 +47,11 @@ router.get('/artworks/:artworkID', getArtworksById);
 router.post('/artworks', addArtwork);
 router.patch('/artworks/:artworkID', updateArtwork);
 router.delete('/artworks/:artworkID', deleteArtwork);
+
+router.get('/locations', getLocations);
+router.get('/locations/:locationID', getLocationsById);
+router.post('/locations', addLocation);
+router.patch('/locations/:locationID', updateLocation);
+router.delete('/locations/:locationID', deleteLocation);
 
 export default router;
