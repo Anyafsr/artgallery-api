@@ -27,7 +27,13 @@ import {
   updateLocation,
   deleteLocation,
 } from '../controllers/Locations.js';
-
+import {
+  getTickets,
+  getTicketsById,
+  addTicket,
+  updateTicket,
+  deleteTicket,
+} from '../controllers/Tickets.js';
 const router = express.Router();
 
 router.get('/visitors', getVisitors);
@@ -53,5 +59,11 @@ router.get('/locations/:locationID', getLocationsById);
 router.post('/locations', addLocation);
 router.patch('/locations/:locationID', updateLocation);
 router.delete('/locations/:locationID', deleteLocation);
+
+router.get('/tickets', getTickets);
+router.get('/tickets/:ticketID', getTicketsById);
+router.post('/tickets', addTicket);
+router.patch('/tickets/:ticketID', updateTicket);
+router.delete('/tickets/:ticketID', deleteTicket);
 
 export default router;
