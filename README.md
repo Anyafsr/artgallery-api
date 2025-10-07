@@ -6,4 +6,4 @@ Step menggunakan:
 5. Setelah itu buatlah database dengan mysql dengan nama database "artgallery_db"
 6. Lalu masukkan command "npx sequelize-cli db:seed:all"
 7. Lalu masukkan command "npm run dev" untuk menjalankan server.
-8.
+8. Untuk menambahkan datanya bisa melalui collection Postman dengan link berikut: https://bit.ly/46WAqUg
